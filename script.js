@@ -163,7 +163,7 @@ function leaveAlready() {
 
 function goToTheeKitchen() {
   document.getElementById("CLICK").play();
-  window.location.href = "https://7cfwpp.csb.app/";
+  window.location.href = "https://yulysanchez.github.io/Project-Room-Kitcheenl4/";
 }
 
 //Rotation of Shapes In The Code
@@ -219,3 +219,4 @@ function startAmbienceOnce() {
   ambiance.volume = 0.5;
   ambiance.play();
 }
+
