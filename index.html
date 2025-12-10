@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>THEE ESCAPE ROOM OF DITREN'S MANSION GOODLUCK BUD</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+
+    <div class="row1 fade-in" id = "row1">
+      <div class="rect">
+        <div class="column center-content lock " id = "column1">
+          <img src="images/Old_ahh_lock.png"  id="lock" onclick="" class="contain-notes clickable2" />
+        </div>
+        <div class="column center-content" id = "column2" >
+          <img src="images/Old_note_card.png" id = "Note1" onclick="showNote1()" class="contain-notes clickable2" />
+        </div>
+        <div class="column center-content"  id = "Light" onclick="">
+        </div>
+      </div>
+      <div class="rect2 center-content" id = "rectangle1">
+        <img src="images/Old_note_card.png" id = "Note4" onclick="showNote4()" class="contain-notes clickable2" />
+      </div>
+    </div>
+    <div class="row1" id = "row2">
+      <div class="rect">
+        <div class="blue-div center-content" id = "blue1">
+          <img src="images/Old_note_card.png" id = "Note3" onclick="showNote3()" class="contain-notes clickable2" />
+        </div>
+        <div class="blue-div">
+          <div class="orange-div center-content" id = "orange1">
+            <img src="images/invisble.png"  
+            id = "key" 
+            onclick="" 
+            class="contain-notes" />
+          </div>
+          <div class="orange-div center-content" id = "orange2" >
+            <img src="images/Old_note_card.png" id = "Note2" onclick="showNote2()" class="contain-notes clickable2" />
+          </div>
+        </div>
+      </div>
+      <div class="rect2 center-content" id = "rectangle2">
+        <img src="images/ancient chest.png" id = "TheeCode" onclick="showTheeCode()" class="contain-chest clickable2" />
+      </div>
+    </div>
+
+    <div class="modal2 center-content" id="Dialyn">
+      <span class="" onclick="hideDialyn()">&times;</span>
+      <div class="modal-bodydef center-content">
+        <div class="column2 center-content" >
+          <h1 class="customFont big-text popin">What. . . .the. . . .****? </h1>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal center-content" id="theeLight" onclick="hideLight()">
+      <div class="modal-bodydef center-content">
+        <div class="column2 center-content" >
+          <img src="images/Lightbulb.png" class="contain-Lightbulb" />
+        </div>
+      <div class="column2 center-content" >
+        <img src="images/break.png" onclick = "breakLight()" class="contain-chest clickable2" />
+      </div>
+    </div>
+    </div>
+    
+    <div class="modal center-content" id="theeNote1" onclick="hideNote1()">
+      <div class="modal-bodydef center-content">
+        <div class="column2 center-content" >
+          <img src="images/Old note card 1.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal center-content" id="theeNote2" onclick="hideNote2()">
+      <div class="modal-bodydef center-content">
+        <div class="column2 center-content" >
+          <img src="images/Old note card 2.png"  />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal center-content" id="theeNote3" onclick="hideNote3()">
+      <div class="modal-bodydef center-content">
+        <div class="column2 center-content" >
+          <img src="images/Old note card 3.png"  />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal center-content" id="theeNote4" onclick="hideNote4()">
+      <div class="modal-bodydef center-content">
+        <div class="column2 center-content" >
+          <img src="images/Old note card 4.png"  />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal chest center-content" id="theeBox" >
+      <span class="close2" onclick="hideTheeCode()">&times;</span>
+      <div class="modal-body center-content" id = "modal1">
+        <div class="box center-content" id="square1" >
+          <img src="images/Triangle1.png"  id = "S1" onclick = "changeShapes(this)" class="contain-chest clickable2" />
+        </div>
+        <div class="box center-content" id="square2" >
+          <img src="images/X1.png" id = "S2" onclick="changeShapes(this)" class="contain-chest clickable2" />
+        </div>
+        <div class="box center-content" id="square3" >
+          <img src="images/Circle.png" id = "S3" onclick="changeShapes(this)" class="contain-chest clickable2" />
+        </div>
+        <div class="box center-content" id="square4" >
+          <img src="images/A_star.png" id = "S4" onclick="changeShapes(this)" class="contain-chest clickable2" />
+        </div>
+      </div>
+      </div>
+    </div>
+
+    
+  </body>
+  <audio src="sounds/LockSound.wav" type="audio/wav" id="LOCK"></audio>
+  <audio src="sounds/Notes.wav" type="audio/wav" id="NOTE"></audio>
+  <audio src="sounds/open_chest.wav" type="audio/wav" id="OC"></audio>
+  <audio src="sounds/close_chest.wav" type="audio/wav" id="CC"></audio>
+  <audio src="sounds/Light.wav" type="audio/wav" id="LIGHT"></audio>
+  <audio src="sounds/click.wav" type="audio/wav" id="CLICK"></audio>
+  <audio src="sounds/creep2.wav" type ="audio/wav" loop id="BGM"></audio>
+  <audio src="sounds/keys.wav" type="audio/wav" id="KEYS"></audio>
+
+    <script src="script.js"></script>
+    <script src="preload.js"></script>
+  </body>
+</html>
